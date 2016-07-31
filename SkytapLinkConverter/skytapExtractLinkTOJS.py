@@ -8,11 +8,12 @@ import re
 
 inFile = sys.argv[1]
 outFileName = inFile.split('.')
+outFile = open(outFileName[0] + '.js' , "w")
 pattern = re.compile(r".{1,3}\thttp.*")
-outFile = open(outFileName[0] + '.json' , "w")
+
 
 with open(sys.argv[1]) as f:
-    outFile.write('{' + "\n")
+    outFile.write('VMs = {' + "\n")
 
     # Set up vm host numbers. ### -  vm0 is ALL vms
     i = 0
@@ -20,10 +21,9 @@ with open(sys.argv[1]) as f:
     for line in f:
         if (pattern.match(line)):   
             url = line.split()[1]
-            outFile.write('"vm{}'.format(i) + '"' + ':' + '"' + url+'",' + "\n")
+            outFile.write('vm{}'.format(i) + ':' + '"' + url+'",' + "\n")
             i = i + 1 
-    outFile.write('},')
-    
+    outFile.write('}')    
     
 
 
