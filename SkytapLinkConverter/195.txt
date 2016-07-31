@@ -30,19 +30,3 @@ Attendee URLs (VM Access Enabled 7am-10pm Eastern Time)
 21	https://cloud.skytap.com/vms/a805ce37cf0afd6d903f7f07b26e8832/desktops	
 22	https://cloud.skytap.com/vms/ed69f17eab6611f9eb0ab5e1818d04cf/desktops	
 23	https://cloud.skytap.com/vms/bfb63a8bfb500b8962b7331d5f60a2d6/desktops	
-
-
-	
-
-
-
-
-
-
-
-
-
-
-
-	
-	
